@@ -6,8 +6,8 @@
     "role": "GenAI Engineer",
     "dates": "Apr 2024 \u2014 Present",
     "title": "Clinical intelligence, grounded in evidence.",
-    "short": "Clinical intelligence & agentic workflows",
-    "desc": "Connecting clinical data, retrieval, and agent orchestration to support coding and risk-adjustment workflows.",
+    "short": "Clinical coding & agent workflows",
+    "desc": "RAG services, LangGraph orchestration, clinical integrations, and AWS deployment.",
     "metric": "24%",
     "outcome": "improvement in HCC capture",
     "second": "21%",
@@ -19,8 +19,8 @@
       "AWS",
       "HL7 / FHIR"
     ],
-    "problem": "Clinical evidence is distributed across EHR systems, claims, and enterprise data. Finding the right context and turning it into useful coding support requires reliable ingestion, retrieval, and controlled workflows.",
-    "contribution": "Developed GenAI and RAG services, stateful LangGraph workflows, enterprise tool integrations, evaluation frameworks, and production deployment patterns. Partnered with clinicians, product owners, platform engineers, and compliance teams on acceptance criteria and releases.",
+    "problem": "Clinical evidence was fragmented across EHR systems and claims. Coding support needed grounded context and controlled workflow execution.",
+    "contribution": "Developed retrieval and agent services; partnered with clinical, platform, and compliance teams on evaluation and production readiness.",
     "flow": [
       "Clinical sources",
       "Ingestion & metadata",
@@ -51,7 +51,8 @@
       "Latency, token consumption, and regression comparisons",
       "Human review and controlled rollout"
     ],
-    "delivery": "Docker, Amazon EKS, Terraform, and Argo CD supported deployment. LangSmith, LangFuse, Datadog, and CloudWatch supported tracing, quality monitoring, and issue investigation."
+    "delivery": "Docker, Amazon EKS, Terraform, and Argo CD supported deployment. LangSmith, LangFuse, Datadog, and CloudWatch supported tracing, quality monitoring, and issue investigation.",
+    "ownership": "RAG services, LangGraph orchestration, clinical integrations, and AWS deployment."
   },
   {
     "slug": "financial-knowledge",
@@ -60,8 +61,8 @@
     "role": "AI Engineer",
     "dates": "Apr 2023 \u2014 Mar 2024",
     "title": "Financial knowledge. Production discipline.",
-    "short": "Enterprise financial knowledge systems",
-    "desc": "Grounded financial insights through Azure OpenAI, retrieval services, secure APIs, and evaluated releases.",
+    "short": "Financial knowledge services",
+    "desc": "Reusable retrieval components, response validation, and Azure production integration.",
     "metric": "29%",
     "outcome": "improvement in throughput",
     "second": "27%",
@@ -73,8 +74,8 @@
       "FastAPI",
       "AKS"
     ],
-    "problem": "Enterprise financial knowledge needs to be accessible through consistent retrieval and reliable responses. Production delivery must account for service resilience, secure integration, repeatable releases, and traceable model behavior.",
-    "contribution": "Developed reusable Python and LangChain components for retrieval, prompt construction, context assembly, inference, business rules, and response validation. Integrated services with Azure infrastructure and collaborated on validation and operational readiness.",
+    "problem": "Financial knowledge services needed consistent retrieval, validated responses, and reliable production delivery.",
+    "contribution": "Developed Python and LangChain services for retrieval, inference, and validation; integrated them with Azure infrastructure.",
     "flow": [
       "Enterprise events",
       "Azure ingestion",
@@ -105,7 +106,8 @@
       "A/B comparisons of prompt and retrieval configurations",
       "API validation, integration tests, and regression testing"
     ],
-    "delivery": "GitHub Actions and Terraform supported repeatable delivery. Azure Monitor, Application Insights, Datadog, and distributed tracing supported production observability."
+    "delivery": "GitHub Actions and Terraform supported repeatable delivery. Azure Monitor, Application Insights, Datadog, and distributed tracing supported production observability.",
+    "ownership": "Reusable retrieval components, response validation, and Azure production integration."
   },
   {
     "slug": "search-relevance",
@@ -114,8 +116,8 @@
     "role": "Data Scientist",
     "dates": "Jan 2019 \u2014 Jun 2020",
     "title": "Help people find what they came for.",
-    "short": "Search relevance & query resolution",
-    "desc": "Hybrid retrieval and learned ranking that connect customer intent with useful search results.",
+    "short": "Search retrieval & ranking",
+    "desc": "Hybrid retrieval, behavioral features, and scalable ranking pipelines.",
     "metric": "25%",
     "outcome": "improvement in query resolution",
     "second": "18%",
@@ -127,8 +129,8 @@
       "Apache Spark",
       "Airflow"
     ],
-    "problem": "Low relevance and inconsistent query resolution create friction in customer-facing search. Improving results requires better behavioral data, contextual matching, and a way to measure user impact beyond individual examples.",
-    "contribution": "Developed retrieval and ranking pipelines combining lexical signals, embeddings, behavioral features, and learned models. Worked with product managers, engineers, and analysts to translate search problems into measurable ML objectives.",
+    "problem": "Low search relevance increased customer friction and support escalations.",
+    "contribution": "Developed lexical and embedding retrieval, ranking features, and Spark/Airflow pipelines; partnered with product teams on evaluation.",
     "flow": [
       "Clickstream & catalog",
       "Feature processing",
@@ -159,6 +161,7 @@
       "A/B testing",
       "Query resolution and escalation outcomes"
     ],
-    "delivery": "Supported production ML and data pipelines using Docker, Kubernetes, CI/CD workflows, and AWS infrastructure."
+    "delivery": "Supported production ML and data pipelines using Docker, Kubernetes, CI/CD workflows, and AWS infrastructure.",
+    "ownership": "Hybrid retrieval, behavioral features, and scalable ranking pipelines."
   }
 ]

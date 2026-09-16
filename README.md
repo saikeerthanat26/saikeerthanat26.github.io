@@ -76,3 +76,14 @@ The homepage now uses ProjectWorld, a full-stage Three.js project gallery with t
 Design references: https://bruno-simon.com/ (spatial portfolio exploration), https://lusion.co/ (dimensional project presentation). Original geometry and implementation; no copied assets.
 
 Validation: production build and five logic tests passed. Local browser verification was blocked by the browser environment; mobile visual QA remains unverified.
+
+## Evidence-first redesign
+
+The homepage leads with role, delivery scope, and three reported engagement outcomes. Project rows state individual contribution. Case studies use a short engagement brief and expandable architecture, implementation tradeoffs, and evaluation sections. The 3D gallery remains available on demand, lazy loaded after opening; its text panel has an opaque background to prevent sculpture overlap. Contact now leads directly to the project brief.
+
+Research applied:
+- https://www.nngroup.com/articles/how-users-read-on-the-web/ — concise, scannable, objective writing.
+- https://www.nngroup.com/articles/progressive-disclosure/ — secondary detail on request.
+- https://www.thoughtworks.com/what-we-do/enterprise-ai — outcome and production-oriented service presentation.
+
+No new credentials, testimonials, management scope, or performance claims were invented. Resume-reported metrics retain qualification. This editorial redesign has not been tested with prospective clients.
