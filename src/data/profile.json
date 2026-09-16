@@ -1,0 +1,114 @@
+[
+  {
+    "id": "intro",
+    "keys": "who about introduction yourself background profile summary sai keerthana tell",
+    "title": "About Sai",
+    "text": "Sai Keerthana is a Senior AI Engineer with 10+ years across software, data engineering, machine learning, and enterprise AI. Her recent focus is agentic AI, RAG, secure integrations, evaluation, and production delivery across healthcare and financial services.",
+    "url": "/experience/"
+  },
+  {
+    "id": "vatica",
+    "keys": "vatica health healthcare clinical hcc coding fhir hl7 current latest recent project",
+    "title": "Vatica Health",
+    "text": "At Vatica Health, Sai works as a GenAI Engineer (April 2024–present), developing RAG and LangGraph agent workflows for clinical coding support. Her résumé reports 24% improvement in HCC capture and 21% improvement in clinical coding support. The work includes HL7/FHIR integrations, evaluation, and AWS production deployment.",
+    "url": "/work/clinical-intelligence/"
+  },
+  {
+    "id": "jpmc",
+    "keys": "jpmorgan jpmc chase finance financial azure banking bank",
+    "title": "JPMorgan Chase",
+    "text": "At JPMorgan Chase (April 2023–March 2024), Sai worked on financial knowledge systems with Azure OpenAI, LangChain, Weaviate, FastAPI, and AKS. Her résumé reports 29% improvement in throughput and 27% improvement in production runtime reliability.",
+    "url": "/work/financial-knowledge/"
+  },
+  {
+    "id": "amazon",
+    "keys": "amazon search ranking relevance bm25 spark airflow",
+    "title": "Amazon",
+    "text": "At Amazon (January 2019–June 2020), Sai developed search retrieval and ranking workflows using Python, BM25, embeddings, behavioral signals, Spark, and Airflow. Her résumé reports a 25% improvement in query resolution and an 18% reduction in support escalations.",
+    "url": "/work/search-relevance/"
+  },
+  {
+    "id": "costco",
+    "keys": "costco retail wholesale snowflake",
+    "title": "Costco Wholesale",
+    "text": "At Costco Wholesale (July 2020–December 2021), Sai worked as an ML Engineer on enterprise knowledge retrieval, search ranking, and retail analytics using NLP, Snowflake, PySpark, XGBoost, and Azure.",
+    "url": "/experience/"
+  },
+  {
+    "id": "wisconsin",
+    "keys": "wisconsin state government public forecasting prediction",
+    "title": "State of Wisconsin",
+    "text": "As an AI/ML Engineer for the State of Wisconsin (January 2022–March 2023), Sai worked on demand forecasting, resource planning, and data pipelines using Python, Scikit-learn, TensorFlow, PySpark, and Azure.",
+    "url": "/experience/"
+  },
+  {
+    "id": "goldman",
+    "keys": "goldman sachs legal compliance early first data engineer",
+    "title": "Goldman Sachs",
+    "text": "At Goldman Sachs (June 2016–December 2018), Sai worked as a Data Engineer on document intelligence and data pipelines supporting legal and compliance workflows with Python, NLP, Spark, PostgreSQL, and APIs.",
+    "url": "/experience/"
+  },
+  {
+    "id": "agents",
+    "keys": "agent agents agentic langgraph langchain mcp tools tool orchestration state multiagent",
+    "title": "Agentic AI",
+    "text": "Sai’s experience includes LangGraph stateful workflows, routing, tool/function calling, MCP-compatible integrations, and multi-agent orchestration. She combines workflow constraints and tool-access controls with evaluation and observability.",
+    "url": "/systems/"
+  },
+  {
+    "id": "rag",
+    "keys": "rag retrieval pinecone weaviate vector embeddings reranking knowledge grounded llamaindex",
+    "title": "Retrieval and RAG",
+    "text": "Sai develops grounded retrieval pipelines using chunking, embeddings, metadata filtering, semantic and hybrid retrieval, and reranking. Her toolkit includes Pinecone, Weaviate, FAISS, LangChain, and LlamaIndex. Try the working retrieval lab to inspect actual ranking and evaluation.",
+    "url": "/systems/#workflow"
+  },
+  {
+    "id": "cloud",
+    "keys": "cloud aws gcp google azure kubernetes eks aks terraform docker deployment infrastructure",
+    "title": "Cloud delivery",
+    "text": "Her current Vatica work uses AWS as the primary cloud, with GCP as secondary experience. Her JPMorgan Chase work is Azure-based. Deployment experience includes Docker, Kubernetes, EKS/AKS, Terraform, CI/CD, and observability.",
+    "url": "/experience/#skills"
+  },
+  {
+    "id": "evaluation",
+    "keys": "evaluation eval testing ragas langsmith langfuse llmops mlops quality monitoring drift hallucination",
+    "title": "Evaluation and operations",
+    "text": "Sai’s work includes golden datasets, offline and human-in-the-loop evaluations, groundedness, faithfulness, retrieval relevance, task completion, and regression quality gates. She uses Ragas, LangSmith, LangFuse, MLflow, Datadog, and cloud monitoring.",
+    "url": "/systems/"
+  },
+  {
+    "id": "security",
+    "keys": "security secure guardrails governance hipaa injection risk controls permissions",
+    "title": "AI security and governance",
+    "text": "Her experience includes input/output validation, grounded retrieval, guardrails, controlled tool access, audit logging, and monitoring for regulated AI workflows. Her résumé describes familiarity with NIST AI RMF, OWASP LLM risks, and MITRE ATLAS principles.",
+    "url": "/experience/"
+  },
+  {
+    "id": "skills",
+    "keys": "skills technologies stack python programming languages fastapi typescript react frameworks",
+    "title": "Technical skills",
+    "text": "Core areas include Python, SQL, FastAPI, LLM applications, LangGraph, LangChain, RAG, vector search, ML frameworks, data pipelines, cloud deployment, and MLOps/LLMOps. The experience page has a searchable inventory of her technologies.",
+    "url": "/experience/#skills"
+  },
+  {
+    "id": "education",
+    "keys": "education degree college university bachelor study graduated qualification vnr",
+    "title": "Education",
+    "text": "Sai holds a bachelor’s degree in Computer Science from VNR Vignana Jyothi Institute of Engineering and Technology, India.",
+    "url": "/experience/"
+  },
+  {
+    "id": "contact",
+    "keys": "contact email phone number reach connect hire hiring availability available contract opportunity resume cv linkedin github",
+    "title": "Contact and opportunities",
+    "text": "Sai is interested in contract opportunities in senior AI engineering, GenAI, agentic systems, RAG, and production ML. Email saikeerthanat.2614@gmail.com or call +1 (703) 420-7978. Specific availability, rate, and project commitments should be confirmed directly.",
+    "url": "/contact/"
+  },
+  {
+    "id": "voice",
+    "keys": "voice sound speak audio recording real",
+    "title": "Voice playback",
+    "text": "Read-aloud uses a voice available on your device, not Sai’s own voice. The portfolio supports adding her recorded answers later, without paying for a voice API.",
+    "url": "/contact/"
+  }
+]

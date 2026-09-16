@@ -1,36 +1,70 @@
-# Sai Keerthana — Interactive AI Engineering Portfolio
+# Sai Keerthana — React Portfolio
 
-Eight-page portfolio with a draggable 3D capability network, architecture explorer, client case studies, search and evaluation workbench, and popup profile assistant.
+A React + TypeScript frontend for a senior AI engineering portfolio. The application source lives in `src/`; `index.html` is only Vite’s entry shell. Pages, chatbot, filters, search, evaluation, and forms are React components.
 
-## Run locally
+## Stack
 
-Use any static server from the repository root, for example `python -m http.server 8000`, then open http://localhost:8000.
+- **React 19 + TypeScript** — typed components, hooks, and state
+- **Vite 7** — development server, optimized build, and code splitting
+- **React Router 7** — client-side page navigation and project routes
+- **Three.js** — real WebGL architecture with orbit controls, raycasting, lighting, materials, and layer selection
+- **Motion** — route content and filter transitions with reduced-motion support
+- **Lucide React** — interface icons
+- **Vitest** — retrieval and profile-answer logic tests
+- **GitHub Actions / Pages** — reproducible build and deployment
 
-## GitHub Pages
+## Run
 
-In Settings → Pages select **Deploy from a branch**, **main**, and **/ (root)**. No build step or paid service is required. The intended URL is https://saikeerthanat26.github.io.
+Requires Node.js 22.12+ (or a supported newer LTS).
 
-## Assistant and voice
+```sh
+npm ci
+npm run dev
+npm test
+npm run build
+npm run preview
+```
 
-`assistant.js` contains curated profile facts and local keyword retrieval. It is not a generative LLM and cannot answer arbitrary questions outside the supplied profile. It returns an explicit fallback for unmatched questions. No chat messages are stored or sent to a server.
+## Source map
 
-Read-aloud uses the browser Web Speech API and device voices. Voice availability varies by device; these are not Sai’s voice. This site has no paid API dependency.
+```text
+src/
+  App.tsx                      Routing, layout, error boundary, metadata
+  main.tsx                     React application entry
+  pages/                       Overview, work, case studies, systems, career, contact
+  components/
+    NetworkScene.tsx            Three.js lifecycle, camera and scene interaction
+    ProfileAssistant.tsx        Accessible popup assistant
+    RetrievalLab.tsx            Editable BM25 search and evaluation
+    ProjectCard.tsx             Reusable project card
+    UI.tsx                      Shared page and section components
+  hooks/                       Reduced-motion and speech synthesis hooks
+  lib/                         Typed search, evaluation, and profile matching
+  data/                        Curated profile, career, skills, and case studies
+  styles.css                   Responsive visual system
+```
 
-To use Sai’s own voice at zero API cost, record the curated answers and add the audio files to `audio/`. Before assistant.js loads, define `window.PORTFOLIO_VOICE_RECORDINGS = {intro: '/audio/intro.mp3', vatica: '/audio/vatica.mp3'}` using only recordings that exist. Recorded clips play for matching answers. This is prerecorded playback, not voice cloning or arbitrary text generation. No personal voice recording has been supplied yet.
+## Deployment
 
-## Files
+In repository **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. The `deploy.yml` workflow installs the lockfile, runs tests, type-checks, builds, and deploys `dist/` on each main-branch push. Run the workflow manually after enabling Pages if needed.
 
-- `index.html` and route directories: portfolio content and metadata
-- `style.css`, `enhancements.css`: responsive layout and interaction styles
-- `immersive.js`: projected 3D skill network, pause and drag controls
-- `assistant.js`: popup assistant, source links, voice playback
-- `retrieval.js`: editable BM25 search, scoring, relevance labels and evaluation export
-- `app.js`: navigation, filtering, architecture controls and email composer
+The production build generates entry files for the eight public routes and a 404 fallback, so direct case-study URLs and refreshes work on GitHub Pages. No server or paid API is required. Compiled files and `node_modules` are intentionally not committed.
 
-## Content integrity
+## Chatbot and voice — clear limits
 
-Case studies summarize resume-reported client engagements. Metrics are not independently audited. Demonstrations contain synthetic data. No client code, private datasets, testimonials, invented credentials, or fabricated voice recordings are included.
+The popup is a local profile assistant with curated answers and source links. It is **not a generative LLM** and does not answer arbitrary questions outside its public profile knowledge. Unmatched questions receive an explicit fallback. It sends no chat history to a model service.
 
-## Accessibility
+Read-aloud uses available browser/device voices; it does **not** imitate Sai’s voice. Voice availability depends on the browser. To use her own voice without API fees, add her actual recorded answers under `public/audio/` and map each answer ID to its path in `src/lib/profile.ts`. The recordings map is empty because no recordings have been supplied. This is recorded-answer playback, not voice cloning.
 
-Keyboard navigation, native modal focus management, reduced-motion preference, motion pause, text alternatives, and responsive layouts are included. The core content stays available without the animated canvas. Browser visual QA has not been performed in this environment.
+## Content and accessibility
+
+- Client case studies are based on resume-reported experience. Metrics are not independently audited.
+- The architecture is conceptual; retrieval documents are synthetic and editable.
+- The downloadable resume is excluded pending explicit public-upload approval.
+- The 3D scene can be paused, respects reduced motion, and has equivalent text/button controls if WebGL is unavailable.
+- Native dialog semantics handle focus, Escape, and close behavior for the popup.
+- The contact form opens an email draft and does not send or store form data.
+
+## Validation
+
+The local production build includes TypeScript checking. Five Vitest checks cover relevant-document ranking, empty/no-match paths, evaluation metrics, supported profile routing, and unknown-question fallback. Browser visual verification is not included in these checks.

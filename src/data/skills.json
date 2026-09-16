@@ -1,0 +1,241 @@
+[
+  {
+    "category": "Generative AI & LLMs",
+    "skills": [
+      "OpenAI GPT-4",
+      "Anthropic Claude",
+      "LLaMA",
+      "RAG",
+      "Agentic AI",
+      "Multi-Agent Systems",
+      "Prompt Engineering",
+      "ReAct",
+      "Tool Calling",
+      "Token Optimization",
+      "Hallucination Mitigation",
+      "LLM Guardrails",
+      "Darwin AI"
+    ]
+  },
+  {
+    "category": "AI Frameworks & Orchestration",
+    "skills": [
+      "LangChain",
+      "LangGraph",
+      "LangFuse",
+      "LangSmith",
+      "LlamaIndex",
+      "Google ADK",
+      "AutoGen",
+      "DSPy",
+      "Agentic Workflows",
+      "Multi-Agent Orchestration",
+      "Model Context Protocol (MCP)",
+      "Tool Orchestration",
+      "Autonomous Agents"
+    ]
+  },
+  {
+    "category": "Machine Learning & NLP",
+    "skills": [
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "XGBoost",
+      "Hugging Face",
+      "BERT",
+      "Sentence Transformers",
+      "spaCy",
+      "NLP",
+      "Predictive Modeling",
+      "Forecasting",
+      "Classification",
+      "Regression",
+      "Anomaly Detection"
+    ]
+  },
+  {
+    "category": "Vector Search & Retrieval",
+    "skills": [
+      "Pinecone",
+      "Weaviate",
+      "FAISS",
+      "Neo4j",
+      "Cypher",
+      "Knowledge Graphs",
+      "GraphRAG",
+      "Entity & Relationship Extraction",
+      "Semantic Search",
+      "Vector Search",
+      "Hybrid Retrieval",
+      "BM25",
+      "Cross-Encoder Reranking",
+      "Embeddings"
+    ]
+  },
+  {
+    "category": "Programming & APIs",
+    "skills": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "TypeScript",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "Microservices",
+      "API Integration",
+      "React",
+      "Figma",
+      "Dash",
+      "Bootstrap"
+    ]
+  },
+  {
+    "category": "Data Engineering & Processing",
+    "skills": [
+      "Pandas",
+      "NumPy",
+      "PySpark",
+      "Apache Spark",
+      "Airflow",
+      "ETL/ELT Pipelines",
+      "Data Ingestion",
+      "Feature Engineering",
+      "Data Preprocessing",
+      "Batch Processing",
+      "Real-Time Data Pipelines"
+    ]
+  },
+  {
+    "category": "Databases & Storage",
+    "skills": [
+      "Snowflake",
+      "Snowflake Cortex AI",
+      "PostgreSQL",
+      "Relational Databases",
+      "Data Warehousing",
+      "Amazon S3",
+      "Data Lakehouse",
+      "Vector Databases",
+      "Databricks",
+      "Delta Lake",
+      "Unity Catalog",
+      "Apache Spark",
+      "PySpark",
+      "SparkSQL",
+      "Airflow"
+    ]
+  },
+  {
+    "category": "Cloud & Distributed Systems",
+    "skills": [
+      "AWS (Bedrock",
+      "SageMaker",
+      "S3",
+      "Lambda",
+      "EKS",
+      "ECS",
+      "API Gateway",
+      "Kinesis",
+      "CloudWatch)",
+      "Google Cloud Platform (Vertex AI",
+      "Vertex AI Pipelines",
+      "Vertex AI Experiments",
+      "Google Cloud Storage",
+      "Google Cloud Run",
+      "Pub/Sub",
+      "BigQuery)",
+      "Azure OpenAI",
+      "Cloud-Native Architecture",
+      "Event-Driven Architecture",
+      "Distributed Systems"
+    ]
+  },
+  {
+    "category": "Deployment & DevOps",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "Argo CD",
+      "Terraform",
+      "GitHub Actions",
+      "Jenkins",
+      "CI/CD",
+      "Infrastructure as Code"
+    ]
+  },
+  {
+    "category": "MLOps / LLMOps",
+    "skills": [
+      "Model Deployment",
+      "Model Evaluation",
+      "LLM Evaluation",
+      "LLM-as-a-Judge",
+      "Golden Datasets",
+      "Benchmark Datasets",
+      "Ragas",
+      "LangSmith",
+      "LangFuse",
+      "Offline Evaluation",
+      "Regression Testing",
+      "Automated Scoring",
+      "Human-in-the-Loop Evaluation",
+      "Groundedness",
+      "Faithfulness",
+      "Task-Completion Metrics",
+      "A/B Testing",
+      "CI/CD Quality Gates",
+      "Prompt/Model Versioning",
+      "Drift Detection",
+      "Anomaly Detection",
+      "Agent Tracing",
+      "Distributed Tracing",
+      "Model Monitoring",
+      "Latency Optimization",
+      "Cost Optimization",
+      "Canary Deployments",
+      "Rollback",
+      "Incident Response",
+      "RCA"
+    ]
+  },
+  {
+    "category": "Monitoring & Observability",
+    "skills": [
+      "Datadog",
+      "CloudWatch",
+      "Azure Monitor",
+      "Data Observability",
+      "Data Quality Monitoring",
+      "Data Reliability Engineering",
+      "Pipeline Monitoring",
+      "Schema Validation",
+      "Data Profiling",
+      "Alerting",
+      "Vertex AI Model Monitoring"
+    ]
+  },
+  {
+    "category": "Analytics, Governance & Compliance",
+    "skills": [
+      "Tableau",
+      "Power BI",
+      "KPI Reporting",
+      "Statistical Analysis",
+      "Hypothesis Testing",
+      "Data Governance",
+      "HIPAA Compliance",
+      "HL7/FHIR",
+      "AI & Model Governance",
+      "Audit Readiness",
+      "Risk & Compliance AI",
+      "Responsible AI",
+      "AI Governance",
+      "Model Governance",
+      "LLM Guardrails",
+      "Security Controls",
+      "Audit Readiness"
+    ]
+  }
+]

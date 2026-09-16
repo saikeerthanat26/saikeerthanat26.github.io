@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://saikeerthanat26.github.io/sitemap.xml

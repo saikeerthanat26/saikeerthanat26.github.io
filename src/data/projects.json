@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "clinical-intelligence",
+    "company": "Vatica Health",
+    "industry": "Healthcare",
+    "role": "GenAI Engineer",
+    "dates": "Apr 2024 \u2014 Present",
+    "title": "Clinical intelligence, grounded in evidence.",
+    "short": "Clinical intelligence & agentic workflows",
+    "desc": "Connecting clinical data, retrieval, and agent orchestration to support coding and risk-adjustment workflows.",
+    "metric": "24%",
+    "outcome": "improvement in HCC capture",
+    "second": "21%",
+    "secondlabel": "improvement in clinical coding support",
+    "stack": [
+      "LangGraph",
+      "Python",
+      "Pinecone",
+      "AWS",
+      "HL7 / FHIR"
+    ],
+    "problem": "Clinical evidence is distributed across EHR systems, claims, and enterprise data. Finding the right context and turning it into useful coding support requires reliable ingestion, retrieval, and controlled workflows.",
+    "contribution": "Developed GenAI and RAG services, stateful LangGraph workflows, enterprise tool integrations, evaluation frameworks, and production deployment patterns. Partnered with clinicians, product owners, platform engineers, and compliance teams on acceptance criteria and releases.",
+    "flow": [
+      "Clinical sources",
+      "Ingestion & metadata",
+      "Grounded retrieval",
+      "Agent orchestration",
+      "Review & response"
+    ],
+    "choices": [
+      [
+        "Grounding before generation",
+        "Use chunking, metadata filtering, hybrid retrieval, and reranking to assemble relevant clinical context.",
+        "Retrieval adds latency and requires its own relevance evaluation; a fluent answer alone is not evidence of correctness."
+      ],
+      [
+        "Controlled agent execution",
+        "Use explicit workflow state, routing, and tool interfaces for multi-step clinical and compliance tasks.",
+        "More autonomy increases the importance of tool permissions, validation, error handling, and observable handoffs."
+      ],
+      [
+        "Evaluation as a release gate",
+        "Compare prompt, model, retrieval, and orchestration changes against golden datasets and human review.",
+        "Offline metrics provide repeatability; expert review is still needed to assess workflow usefulness."
+      ]
+    ],
+    "checks": [
+      "Groundedness, faithfulness, and retrieval relevance",
+      "Tool-call behavior and task completion",
+      "Latency, token consumption, and regression comparisons",
+      "Human review and controlled rollout"
+    ],
+    "delivery": "Docker, Amazon EKS, Terraform, and Argo CD supported deployment. LangSmith, LangFuse, Datadog, and CloudWatch supported tracing, quality monitoring, and issue investigation."
+  },
+  {
+    "slug": "financial-knowledge",
+    "company": "JPMorgan Chase",
+    "industry": "Finance",
+    "role": "AI Engineer",
+    "dates": "Apr 2023 \u2014 Mar 2024",
+    "title": "Financial knowledge. Production discipline.",
+    "short": "Enterprise financial knowledge systems",
+    "desc": "Grounded financial insights through Azure OpenAI, retrieval services, secure APIs, and evaluated releases.",
+    "metric": "29%",
+    "outcome": "improvement in throughput",
+    "second": "27%",
+    "secondlabel": "improvement in runtime reliability",
+    "stack": [
+      "Azure OpenAI",
+      "LangChain",
+      "Weaviate",
+      "FastAPI",
+      "AKS"
+    ],
+    "problem": "Enterprise financial knowledge needs to be accessible through consistent retrieval and reliable responses. Production delivery must account for service resilience, secure integration, repeatable releases, and traceable model behavior.",
+    "contribution": "Developed reusable Python and LangChain components for retrieval, prompt construction, context assembly, inference, business rules, and response validation. Integrated services with Azure infrastructure and collaborated on validation and operational readiness.",
+    "flow": [
+      "Enterprise events",
+      "Azure ingestion",
+      "Weaviate retrieval",
+      "Azure OpenAI",
+      "Validated response"
+    ],
+    "choices": [
+      [
+        "Reusable orchestration",
+        "Separate retrieval, context assembly, inference, and response validation into modular services.",
+        "Clear interfaces improve maintainability but require integration tests across the full workflow."
+      ],
+      [
+        "Context and throughput",
+        "Tune retrieval, chunk sizes, context management, semantic caching, and token controls.",
+        "Performance improvements must be checked against grounding and response consistency."
+      ],
+      [
+        "Resilient deployment",
+        "Package services in Docker and deploy through ACR and AKS with health checks, replicas, and autoscaling.",
+        "Runtime availability does not prove answer quality; both operational and semantic monitoring are needed."
+      ]
+    ],
+    "checks": [
+      "Offline evaluation and retrieval-quality assessment",
+      "Grounding checks and human review",
+      "A/B comparisons of prompt and retrieval configurations",
+      "API validation, integration tests, and regression testing"
+    ],
+    "delivery": "GitHub Actions and Terraform supported repeatable delivery. Azure Monitor, Application Insights, Datadog, and distributed tracing supported production observability."
+  },
+  {
+    "slug": "search-relevance",
+    "company": "Amazon",
+    "industry": "Retail & search",
+    "role": "Data Scientist",
+    "dates": "Jan 2019 \u2014 Jun 2020",
+    "title": "Help people find what they came for.",
+    "short": "Search relevance & query resolution",
+    "desc": "Hybrid retrieval and learned ranking that connect customer intent with useful search results.",
+    "metric": "25%",
+    "outcome": "improvement in query resolution",
+    "second": "18%",
+    "secondlabel": "reduction in support escalations",
+    "stack": [
+      "Python",
+      "BM25",
+      "Embeddings",
+      "Apache Spark",
+      "Airflow"
+    ],
+    "problem": "Low relevance and inconsistent query resolution create friction in customer-facing search. Improving results requires better behavioral data, contextual matching, and a way to measure user impact beyond individual examples.",
+    "contribution": "Developed retrieval and ranking pipelines combining lexical signals, embeddings, behavioral features, and learned models. Worked with product managers, engineers, and analysts to translate search problems into measurable ML objectives.",
+    "flow": [
+      "Clickstream & catalog",
+      "Feature processing",
+      "Hybrid candidates",
+      "Learned ranking",
+      "Search evaluation"
+    ],
+    "choices": [
+      [
+        "Hybrid candidate retrieval",
+        "Combine BM25 lexical matching with embedding-based similarity and behavioral signals.",
+        "Exact terms and semantic intent contribute different signals; candidate recall and ranking quality need separate checks."
+      ],
+      [
+        "Scalable feature pipelines",
+        "Use Spark and Airflow to prepare and enrich data for search and recommendation workflows.",
+        "Feature freshness and data quality affect the reliability of downstream ranking."
+      ],
+      [
+        "Measure relevance and impact",
+        "Use Recall@K, MRR, offline evaluation, and A/B testing to guide ranking changes.",
+        "Offline ranking gains should be checked against actual query resolution and customer outcomes."
+      ]
+    ],
+    "checks": [
+      "Recall@K and MRR",
+      "Offline ranking comparisons",
+      "A/B testing",
+      "Query resolution and escalation outcomes"
+    ],
+    "delivery": "Supported production ML and data pipelines using Docker, Kubernetes, CI/CD workflows, and AWS infrastructure."
+  }
+]
