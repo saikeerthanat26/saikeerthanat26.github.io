@@ -68,3 +68,11 @@ Read-aloud uses available browser/device voices; it does **not** imitate Sai’s
 ## Validation
 
 The local production build includes TypeScript checking. Five Vitest checks cover relevant-document ranking, empty/no-match paths, evaluation metrics, supported profile routing, and unknown-question fallback. Browser visual verification is not included in these checks.
+
+## Immersive gallery update
+
+The homepage now uses ProjectWorld, a full-stage Three.js project gallery with three original sculptures representing clinical intelligence, financial knowledge, and search. Project selection updates the scene, accent palette, reported outcome, and case-study link. Visitors can orbit, pause, reset, and select projects through keyboard-accessible buttons. Reduced motion and WebGL fallback preserve navigation. No paid API or external 3D asset is required.
+
+Design references: https://bruno-simon.com/ (spatial portfolio exploration), https://lusion.co/ (dimensional project presentation). Original geometry and implementation; no copied assets.
+
+Validation: production build and five logic tests passed. Local browser verification was blocked by the browser environment; mobile visual QA remains unverified.
